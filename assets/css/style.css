@@ -88,6 +88,15 @@
   align-items: center;
   justify-content: flex-start;
   padding: 100px 0px;
+  position: relative;
+}
+
+canvas {
+  height: 100vh !important;
+  width: 100% !important;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .banner_content {
@@ -125,4 +134,28 @@
   gap: 30px;
   position: relative;
   z-index: 2;
+}
+
+/*  online calculator */
+
+.online_calculator {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.online_calculator_wrapper {
+  height: 200px;
+  backdrop-filter: blur(20px);
+  --webkit-backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ff8901;
+  box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 60px 0px;
+}
+
+.online_calculator_content {
+  max-width: 1100px;
+  margin: 0px auto;
 }
