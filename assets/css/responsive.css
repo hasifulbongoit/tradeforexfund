@@ -1,0 +1,48 @@
+/* ==============responsive 540 ============== */
+
+@media (min-width: 540px) {
+  .banner_heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+/* ==============responsive 767 ============== */
+
+@media (min-width: 767px) {
+
+  .banner_heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+/* ==============responsive 1024 ============== */
+
+@media (min-width: 1024px) {
+  .mobile_toggle {
+    display: none;
+  }
+
+  .header_nav,
+  .header_btn_wrapper {
+    display: flex;
+  }
+
+  .banner_heading {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+}
+
+/* ==============responsive 1200 ============== */
+
+@media (min-width: 1200px) {
+  .banner_heading {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 40px;
+  }
+}

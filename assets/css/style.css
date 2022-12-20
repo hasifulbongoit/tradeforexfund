@@ -1,0 +1,128 @@
+.header_section {
+  padding: 15px 0px;
+  background-color: var(--headerBg);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_logo {
+  width: 60px;
+}
+
+.header_logo img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.header_nav,
+.header_btn_wrapper {
+  display: none;
+}
+
+.header_nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.header_nav ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  display: block;
+  transition: 0.1s linear all;
+  color: #BBBBBB;
+  font-weight: 500;
+  position: relative;
+  padding: 2px 0px;
+  overflow: hidden;
+}
+
+.header_nav ul li a:hover {
+  color: var(--textColor);
+  font-weight: 700;
+}
+
+.header_nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  width: 0px;
+  border-radius: 3px;
+  background-color: var(--mainColor);
+  transition: var(--transition);
+}
+
+.header_nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header_btn_wrapper {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+/* banner section */
+
+.banner_section {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../image/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 0px;
+}
+
+.banner_content {
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+.banner_heading {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.banner_heading_inner {
+  color: var(--textColor);
+}
+
+.banner_text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.banner_button_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
