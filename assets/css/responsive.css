@@ -43,18 +43,6 @@
     padding: 50px 0px;
   }
 
-  .online_calculator {
-    margin-top: -200px;
-    position: relative;
-    z-index: 9;
-    padding: 0px;
-    background: transparent;
-  }
-
-  .aboutus_section {
-    margin-top: -55px;
-  }
-
 }
 
 /* ==============responsive 1200 ============== */
@@ -69,5 +57,26 @@
   .section_padding {
     padding: 60px 0px;
   }
+
+  .online_calculator {
+    margin-top: -200px;
+    position: relative;
+    z-index: 9;
+    padding: 0px;
+    background: transparent;
+  }
+
+  .aboutus_section {
+    margin-top: -55px;
+  }
+
+  .banner_section {
+    align-items: flex-start;
+  }
+
+  .banner_content {
+    margin-top: 100px;
+  }
+
 
 }

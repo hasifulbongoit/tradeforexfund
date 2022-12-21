@@ -85,7 +85,7 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   padding: 85px 0px;
   position: relative;
@@ -103,7 +103,7 @@ canvas {
   max-width: 800px;
   width: 100%;
   position: relative;
-  margin-top: 100px;
+  margin-top: 0;
 }
 
 .banner_heading {
@@ -140,11 +140,15 @@ canvas {
 /*  online calculator */
 
 .online_calculator {
-  margin-top: 0px;
   position: relative;
+  margin-top: 0px;
   z-index: 9;
-  padding: 60px 0px;
+  padding: 60px 15px;
   background: linear-gradient(#17313d 0%, #10181e 100%);
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto
 }
 
 
