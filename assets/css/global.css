@@ -39,10 +39,6 @@ p {
   color: var(--textColor);
 }
 
-.section_padding {
-  padding: 50px 0px;
-}
-
 :root {
   --headerBg: #292929;
   --mainColor: #FDAA01;
@@ -50,6 +46,7 @@ p {
   --btnLinear: linear-gradient(#ffc233 0%, #ff860c 100%);
   --textColor: #FFFFFF;
   --transition: 0.3s all linear;
+  --bgoverlay: #c2c2c2;
 }
 
 .mobile_toggle {

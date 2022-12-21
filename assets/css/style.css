@@ -85,9 +85,9 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  padding: 100px 0px;
+  padding: 85px 0px;
   position: relative;
 }
 
@@ -103,6 +103,7 @@ canvas {
   max-width: 800px;
   width: 100%;
   position: relative;
+  margin-top: 100px;
 }
 
 .banner_heading {
@@ -124,7 +125,7 @@ canvas {
   font-weight: 400;
   position: relative;
   z-index: 1;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .banner_button_wrapper {
@@ -140,22 +141,79 @@ canvas {
 
 .online_calculator {
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  background-color: rgb(0 0 0 / 80%);
 }
 
-.online_calculator_wrapper {
-  height: 200px;
+.calculator_content_banner {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  max-width: 1290px;
+  width: 100%;
+}
+
+.calculator_content {
+  border: 2px solid var(--mainColor);
+  border-radius: 20px;
+  padding: 20px 20px 50px;
+  filter: drop-shadow(0px 30px 80px rgba(0, 0, 0, 0.8));
   backdrop-filter: blur(20px);
   --webkit-backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.05);
-  border: 2px solid #ff8901;
-  box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-  padding: 60px 0px;
 }
 
-.online_calculator_content {
-  max-width: 1100px;
-  margin: 0px auto;
+.calculator_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+
+}
+
+.calculator_input_inner {
+  width: 200px;
+}
+
+.calInput_title {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--textColor);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.calInput_control {
+  min-height: 56px;
+  width: 100%;
+  border-radius: 25px;
+  color: var(--textColor);
+  background: var(--btnLinear);
+  padding: 15px;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+
+.calInput_control::placeholder {
+  color: var(--textColor);
+}
+
+.calInput_control option {
+  color: #000;
+}
+
+.claculator_content_title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.calculator_content_test {
+  opacity: 0;
+  visibility: hidden;
 }

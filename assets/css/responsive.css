@@ -3,7 +3,7 @@
 @media (min-width: 540px) {
   .banner_heading {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 40px;
     margin-bottom: 30px;
   }
 }
@@ -14,7 +14,11 @@
 
   .banner_heading {
     font-size: 50px;
-    line-height: 60px;
+    line-height: 50px;
+  }
+
+  .section_padding {
+    padding: 40px 0px;
   }
 }
 
@@ -32,7 +36,11 @@
 
   .banner_heading {
     font-size: 60px;
-    line-height: 70px;
+    line-height: 60px;
+  }
+
+  .section_padding {
+    padding: 50px 0px;
   }
 
 }
@@ -42,7 +50,12 @@
 @media (min-width: 1200px) {
   .banner_heading {
     font-size: 70px;
-    line-height: 80px;
-    margin-bottom: 40px;
+    line-height: 70px;
+    margin-bottom: 30px;
   }
+
+  .section_padding {
+    padding: 60px 0px;
+  }
+
 }
