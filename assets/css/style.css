@@ -143,7 +143,7 @@ canvas {
   margin-top: 0px;
   position: relative;
   z-index: 9;
-  padding: 60px;
+  padding: 60px 0px;
   background: linear-gradient(#17313d 0%, #10181e 100%);
 }
 
