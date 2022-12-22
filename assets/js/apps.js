@@ -1,7 +1,7 @@
 // slick slider
 
 $(document).ready(function () {
-  $(".payment_item_wrapper").slick({
+  $(".payment_item_wrapper, .ourbenfits_wrapper").slick({
     dots: true,
     autoplay: true,
     arrows: true,
@@ -39,6 +39,56 @@ $(document).ready(function () {
   });
 });
 
+// deposit slider
+
+$(document).ready(function () {
+  $(".widraw_content_slider").slick({
+    dots: true,
+    autoplay: true,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          items: 1,
+        },
+      },
+
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          items: 1,
+        },
+      },
+
+      {
+        breakpoint: 540,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          items: 1,
+        },
+      },
+
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          items: 1,
+        },
+      },
+    ],
+  });
+});
+
 // stcky header
 
 let mainHeader = document.getElementById("myHeader");
@@ -53,6 +103,25 @@ window.addEventListener("scroll", function () {
 });
 
 // accordion
+
+{
+  let acordionBtn = document.getElementsByClassName("faq_item_button");
+
+  // try another
+  [...acordionBtn].forEach((currentItem, i) => {
+    let acordionItem = document.getElementsByClassName("faq_item")[i];
+
+    currentItem.addEventListener("click", () => {
+      let showClass = document.querySelector(".showAcordion");
+
+      if (!acordionItem.classList.contains("showAcordion") && showClass) {
+        showClass.classList.remove("showAcordion");
+      }
+
+      acordionItem.classList.toggle("showAcordion");
+    });
+  });
+}
 
 // online calculator
 
@@ -82,49 +151,10 @@ window.addEventListener("scroll", function () {
 
     if (getInt == 5) {
       if (inputAmount == "") {
-      } else if (inputAmount < 20 || inputAmount > 50000) {
+      } else if (inputAmount < 20 || inputAmount > 100000) {
         if (inputAmount < 20) {
           alert("This Number is so Small");
-        } else if (inputAmount > 5000) {
-          alert("This Number is so Large");
-        }
-        return;
-      }
-    }
-
-    // get input 7%
-    else if (getInt == 7) {
-      if (inputAmount == "") {
-      } else if (inputAmount < 500 || inputAmount > 50000) {
-        if (inputAmount < 500) {
-          alert("This Number is so Small");
-        } else if (inputAmount > 5000) {
-          alert("This Number is so Large");
-        }
-        return;
-      }
-    }
-
-    // get input 9%
-    else if (getInt == 9) {
-      if (inputAmount == "") {
-      } else if (inputAmount < 1000 || inputAmount > 50000) {
-        if (inputAmount < 1000) {
-          alert("This Number is so Small");
-        } else if (inputAmount > 5000) {
-          alert("This Number is so Large");
-        }
-        return;
-      }
-    }
-
-    // get input 130%
-    else if (getInt == 130) {
-      if (inputAmount == "") {
-      } else if (inputAmount < 100 || inputAmount > 50000) {
-        if (inputAmount < 100) {
-          alert("This Number is so Small");
-        } else if (inputAmount > 5000) {
+        } else if (inputAmount > 100000) {
           alert("This Number is so Large");
         }
         return;
@@ -132,12 +162,12 @@ window.addEventListener("scroll", function () {
     }
 
     // get input 170%
-    else if (getInt == 170) {
+    else if (getInt == 107) {
       if (inputAmount == "") {
-      } else if (inputAmount < 200 || inputAmount > 50000) {
-        if (inputAmount < 200) {
+      } else if (inputAmount < 100 || inputAmount > 100000) {
+        if (inputAmount < 100) {
           alert("This Number is so Small");
-        } else if (inputAmount > 5000) {
+        } else if (inputAmount > 100000) {
           alert("This Number is so Large");
         }
         return;
@@ -145,12 +175,12 @@ window.addEventListener("scroll", function () {
     }
 
     // get input 200%
-    else if (getInt == 200) {
+    else if (getInt == 0.3) {
       if (inputAmount == "") {
-      } else if (inputAmount < 300 || inputAmount > 50000) {
-        if (inputAmount < 300) {
+      } else if (inputAmount < 50 || inputAmount > 100000) {
+        if (inputAmount < 50) {
           alert("This Number is so Small");
-        } else if (inputAmount > 5000) {
+        } else if (inputAmount > 100000) {
           alert("This Number is so Large");
         }
         return;
@@ -174,4 +204,9 @@ window.addEventListener("scroll", function () {
     dailyProfit.value = daily.toFixed(2);
     totalProfit.value = monthly.toFixed(2);
   };
+}
+
+// faq accor dion
+
+{
 }

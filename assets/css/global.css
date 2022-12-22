@@ -124,3 +124,27 @@ img {
   font-size: 16px;
   line-height: 21px;
 }
+
+/* section title */
+
+.section_title {
+  max-width: 760px;
+  width: 100%;
+  margin: 0px auto 30px;
+  text-align: center;
+}
+
+.section_title_headinginner {
+  margin-bottom: 40px;
+}
+
+.section_title_heading {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 400;
+}
+
+.section_title_text {
+  font-size: 18px;
+  line-height: 27px;
+}
